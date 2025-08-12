@@ -37,6 +37,8 @@ map <leader>f <Action>(ReformatCode)
 map <leader>sf <Action>(GotoFile)
 map <leader>sg <Action>(SearchEverywhere)
 
+map <leader>zz <Action>(ToggleZenMode)
+
 nmap gcc <Action>(CommentByLineComment)
 nmap grd <Action>(GotoDeclaration)
 nmap gri <Action>(GotoImplementation)
