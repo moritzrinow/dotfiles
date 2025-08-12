@@ -22,6 +22,8 @@ set notimeout
 set timeoutlen=5000
 set <Action>(PopupMenu-selectNext)
 
+nnoremap <ESC> :set nohlsearch<CR>
+
 nnoremap <A-n> :tabnext<CR>
 nnoremap <A-p> :tabprev<CR>\
 nnoremap <A-h> <C-w>h
