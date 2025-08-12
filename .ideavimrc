@@ -1,0 +1,42 @@
+set scrolloff=10
+set relativenumber
+set incsearch
+set showmode
+set showcmd
+set clipboard=unnamed
+set visualbell
+
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+set guicursor=n-v-c-i:block-Cursor
+
+let mapleader = " "
+
+set highlightedyank
+set which-key
+
+set notimeout
+set timeoutlen=5000
+set <Action>(PopupMenu-selectNext)
+
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>\
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+
+inoremap <C-y> <CR>
+
+map <leader>f <Action>(ReformatCode)
+map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(SearchEverywhere)
+
+nmap gcc <Action>(CommentByLineComment)
+nmap grd <Action>(GotoDeclaration)
+nmap gri <Action>(GotoImplementation)
+nmap grr <Action>(ShowUsages)
+nmap gra <Action>(Refactorings.QuickListPopupAction)
