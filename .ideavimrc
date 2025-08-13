@@ -17,6 +17,7 @@ let mapleader = " "
 
 set highlightedyank
 set which-key
+set nerdtree
 
 set notimeout
 set timeoutlen=5000
@@ -44,3 +45,4 @@ nmap grd <Action>(GotoDeclaration)
 nmap gri <Action>(GotoImplementation)
 nmap grr <Action>(ShowUsages)
 nmap gra <Action>(Refactorings.QuickListPopupAction)
+nmap <Bslash> :NERDTreeToggle<CR>
